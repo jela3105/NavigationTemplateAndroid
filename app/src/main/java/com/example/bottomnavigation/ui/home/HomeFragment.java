@@ -71,7 +71,6 @@ public class HomeFragment extends Fragment {
 
         adapter.addFragment(new Tab1Fragment(), "Fixtures");
         adapter.addFragment(new Tab2Fragment(), "Live");
-        adapter.addFragment(new Tab1Fragment(),"Result");
 
         viewPager.setAdapter(adapter);
     }
