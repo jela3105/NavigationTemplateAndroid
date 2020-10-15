@@ -1,4 +1,4 @@
-package com.example.bottomnavigation.ui.home;
+package com.example.bottomnavigation.ui.home.TabsFragments;
 
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
