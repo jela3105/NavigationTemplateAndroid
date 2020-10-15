@@ -35,8 +35,8 @@ public class HomeFragment extends Fragment {
 
         myFragment = inflater.inflate(R.layout.fragment_home, container, false);
 
-        viewPager = myFragment.findViewById(R.id.viewPager);
-        tabLayout = myFragment.findViewById(R.id.tabLayout);
+        viewPager = myFragment.findViewById(R.id.viewPagerFragmentHome);
+        tabLayout = myFragment.findViewById(R.id.tabLayoutFragmentHome);
 
         return myFragment;
     }
