@@ -10,11 +10,11 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
+import com.example.bottomnavigation.ui.home.TabsFragments.*;
+
 import com.example.bottomnavigation.R;
-import com.example.bottomnavigation.ui.home.TabsFragments.SectionPagerAdapter;
-import com.example.bottomnavigation.ui.home.TabsFragments.Tab1Fragment;
-import com.example.bottomnavigation.ui.home.TabsFragments.Tab2Fragment;
 import com.google.android.material.tabs.TabLayout;
+
 
 public class HomeFragment extends Fragment {
 
