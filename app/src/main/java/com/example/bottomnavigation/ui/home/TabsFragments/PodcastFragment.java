@@ -13,24 +13,23 @@ import android.view.ViewGroup;
 import com.example.bottomnavigation.R;
 import com.google.android.material.tabs.TabLayout;
 
-public class Tab1Fragment extends Fragment {
-
+public class PodcastFragment extends Fragment {
     View myFragment;
 
     ViewPager viewPager;
     TabLayout tabLayout;
 
-    public Tab1Fragment() {
+    public PodcastFragment() {
         // Required empty public constructor
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        myFragment = inflater.inflate(R.layout.fragment_tab1, container, false);
+        myFragment = inflater.inflate(R.layout.fragment_podcasts, container, false);
 
-        viewPager = myFragment.findViewById(R.id.viewPagerTab1);
-        tabLayout = myFragment.findViewById(R.id.tabLayoutTab1);
+        viewPager = myFragment.findViewById(R.id.viewPagerTab2);
+        tabLayout = myFragment.findViewById(R.id.tabLayoutTab2);
 
         return myFragment;
     }
@@ -63,10 +62,10 @@ public class Tab1Fragment extends Fragment {
     private void setUpViewPager(ViewPager viewPager) {
         SectionPagerAdapter adapter = new SectionPagerAdapter(getChildFragmentManager());
 
-        adapter.addFragment(new Tab3Fragment(), "Fragment3");
-        adapter.addFragment(new Tab4Fragment(), "Fragment4");
+        adapter.addFragment(new EpisodesFragment(), "Episodes");
+        adapter.addFragment(new DownLoadsFragment(), "Downloads");
+        adapter.addFragment(new ProgramsFragment(), "Programs");
 
         viewPager.setAdapter(adapter);
     }
-
 }
