@@ -11,6 +11,12 @@
         <item name="android:windowBackground">@drawable/splashscreen</item>
     </style>
 
+    <style name="BottomNavigationViewStyle" parent="Widget.MaterialComponents.BottomNavigationView.Colored">
+        <item name="android:background">@color/gray_strong</item>
+        <item name="itemTextColor">@color/white</item>
+        <item name="itemIconTint">@color/white</item>
+    </style>
+
     <style name="AppTabLayout" parent="Widget.Design.TabLayout">
         <item name="tabIndicatorHeight">0dp</item>
         <item name="tabSelectedTextColor">@color/white</item>
