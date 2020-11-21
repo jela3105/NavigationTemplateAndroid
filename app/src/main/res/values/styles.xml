@@ -35,6 +35,7 @@
 
     <style name="AppTabLayoutSecond" parent="Widget.Design.TabLayout">
         <item name="tabIndicatorHeight">2dp</item>
+        <item name="tabIndicatorFullWidth">false</item>
         <item name="tabIndicator">@color/green</item>
         <item name="tabSelectedTextColor">@color/white</item>
         <item name="tabBackground">@color/black</item>
