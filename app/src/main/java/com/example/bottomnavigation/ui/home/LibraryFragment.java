@@ -69,7 +69,7 @@ public class LibraryFragment extends Fragment {
     private void setUpViewPager(ViewPager viewPager) {
         SectionPagerAdapter adapter = new SectionPagerAdapter(getChildFragmentManager());
 
-        adapter.addFragment(new MusicFragment(), "Música");
+        adapter.addFragment(new MusicFragment(), "Music");
         adapter.addFragment(new PodcastFragment(), "Podcasts");
 
         viewPager.setAdapter(adapter);
