@@ -16,24 +16,24 @@ import com.example.bottomnavigation.R;
 import com.google.android.material.tabs.TabLayout;
 
 
-public class HomeFragment extends Fragment {
+public class LibraryFragment extends Fragment {
 
     View myFragment;
 
     ViewPager viewPager;
     TabLayout tabLayout;
 
-    public HomeFragment() {
+    public LibraryFragment() {
         // Required empty public constructor
     }
 
-    public static HomeFragment getInstance()    {
-        return new HomeFragment();
+    public static LibraryFragment getInstance()    {
+        return new LibraryFragment();
     }
 
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        myFragment = inflater.inflate(R.layout.fragment_home, container, false);
+        myFragment = inflater.inflate(R.layout.fragment_library, container, false);
 
         viewPager = myFragment.findViewById(R.id.viewPagerFragmentHome);
         tabLayout = myFragment.findViewById(R.id.tabLayoutFragmentHome);
