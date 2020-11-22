@@ -1,4 +1,4 @@
-package com.example.bottomnavigation.ui.home.TabsFragments;
+package com.example.spotifyclone.ui.home.TabsFragments;
 
 import android.os.Bundle;
 
@@ -8,7 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.bottomnavigation.R;
+import com.example.spotifyclone.R;
 
 /**
  * A simple {@link Fragment} subclass.

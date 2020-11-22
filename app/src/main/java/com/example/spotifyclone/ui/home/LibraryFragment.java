@@ -1,4 +1,4 @@
-package com.example.bottomnavigation.ui.home;
+package com.example.spotifyclone.ui.home;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,9 +10,9 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
-import com.example.bottomnavigation.ui.home.TabsFragments.*;
+import com.example.spotifyclone.ui.home.TabsFragments.*;
 
-import com.example.bottomnavigation.R;
+import com.example.spotifyclone.R;
 import com.google.android.material.tabs.TabLayout;
 
 

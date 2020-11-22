@@ -1,4 +1,4 @@
-package com.example.bottomnavigation.ui.notifications;
+package com.example.spotifyclone.ui.notifications;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,7 +12,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
-import com.example.bottomnavigation.R;
+import com.example.spotifyclone.R;
 
 public class NotificationsFragment extends Fragment {
 

@@ -1,4 +1,4 @@
-package com.example.bottomnavigation;
+package com.example.spotifyclone;
 
 import android.content.Context;
 

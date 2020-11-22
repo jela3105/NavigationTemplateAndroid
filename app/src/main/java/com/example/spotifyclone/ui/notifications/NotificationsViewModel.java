@@ -1,4 +1,4 @@
-package com.example.bottomnavigation.ui.notifications;
+package com.example.spotifyclone.ui.notifications;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
