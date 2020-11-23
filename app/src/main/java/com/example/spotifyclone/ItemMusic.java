@@ -1,6 +1,11 @@
 package com.example.spotifyclone;
 
 public class ItemMusic {
+    public ItemMusic(String image, String title, String description) {
+        this.image = image;
+        this.title = title;
+        this.description = description;
+    }
 
     private String image;
     private String title;
