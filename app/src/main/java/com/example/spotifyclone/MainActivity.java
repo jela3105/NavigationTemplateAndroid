@@ -2,6 +2,7 @@ package com.example.spotifyclone;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.spotify.android.appremote.api.ConnectionParams;
@@ -22,7 +23,7 @@ import androidx.navigation.ui.NavigationUI;
 public class MainActivity extends AppCompatActivity {
 
     private static final String CLIENT_ID = "03367b5b788c4d5992b0b65eba038d10";
-    private static final String REDIRECT_URI = "com.example.spotifyclone://callback";
+    private static final String REDIRECT_URI = "http://com.example.spotifyclone/callback";
     private SpotifyAppRemote mSpotifyAppRemote;
 
     @Override
@@ -60,14 +61,14 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onFailure(Throwable throwable) {
                         Log.e("MainActivity", throwable.getMessage(), throwable);
-
+                        Toast.makeText(MainActivity.this, "valio kk banda", Toast.LENGTH_SHORT).show();
                         // Something went wrong when attempting to connect! Handle errors here
                     }
                 });
     }
 
     private void connected() {
-
+        Toast.makeText(this, "Toast creado", Toast.LENGTH_SHORT).show();
         mSpotifyAppRemote.getPlayerApi().play("spotify:playlist:37i9dQZF1DX2sUQwD7tbmL");
     }
 

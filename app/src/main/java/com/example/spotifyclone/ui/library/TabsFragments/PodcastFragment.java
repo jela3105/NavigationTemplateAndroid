@@ -1,4 +1,4 @@
-package com.example.spotifyclone.ui.home.TabsFragments;
+package com.example.spotifyclone.ui.library.TabsFragments;
 
 import android.os.Bundle;
 
@@ -13,24 +13,23 @@ import android.view.ViewGroup;
 import com.example.spotifyclone.R;
 import com.google.android.material.tabs.TabLayout;
 
-public class MusicFragment extends Fragment {
-
+public class PodcastFragment extends Fragment {
     View myFragment;
 
     ViewPager viewPager;
     TabLayout tabLayout;
 
-    public MusicFragment() {
+    public PodcastFragment() {
         // Required empty public constructor
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        myFragment = inflater.inflate(R.layout.fragment_music, container, false);
+        myFragment = inflater.inflate(R.layout.fragment_podcasts, container, false);
 
-        viewPager = myFragment.findViewById(R.id.viewPagerTab1);
-        tabLayout = myFragment.findViewById(R.id.tabLayoutTab1);
+        viewPager = myFragment.findViewById(R.id.viewPagerTab2);
+        tabLayout = myFragment.findViewById(R.id.tabLayoutTab2);
 
         return myFragment;
     }
@@ -63,11 +62,10 @@ public class MusicFragment extends Fragment {
     private void setUpViewPager(ViewPager viewPager) {
         SectionPagerAdapter adapter = new SectionPagerAdapter(getChildFragmentManager());
 
-        adapter.addFragment(new PlayListsFragment(), "Playlists");
-        adapter.addFragment(new ArtistFragment(), "Artists");
-        adapter.addFragment(new AlbumsFragment(), "Albums");
+        adapter.addFragment(new EpisodesFragment(), "Episodes");
+        adapter.addFragment(new DownLoadsFragment(), "Downloads");
+        adapter.addFragment(new ProgramsFragment(), "Programs");
 
         viewPager.setAdapter(adapter);
     }
-
 }

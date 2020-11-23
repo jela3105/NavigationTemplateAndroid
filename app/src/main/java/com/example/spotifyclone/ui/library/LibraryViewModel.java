@@ -1,4 +1,4 @@
-package com.example.spotifyclone.ui.home;
+package com.example.spotifyclone.ui.library;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

@@ -1,35 +1,42 @@
-package com.example.spotifyclone.ui.home.TabsFragments;
+package com.example.spotifyclone.ui.library;
 
 import android.os.Bundle;
-
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
-import androidx.viewpager.widget.ViewPager;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.viewpager.widget.ViewPager;
+
+import com.example.spotifyclone.ui.library.TabsFragments.*;
+
 import com.example.spotifyclone.R;
 import com.google.android.material.tabs.TabLayout;
 
-public class PodcastFragment extends Fragment {
+
+public class LibraryFragment extends Fragment {
+
     View myFragment;
 
     ViewPager viewPager;
     TabLayout tabLayout;
 
-    public PodcastFragment() {
+    public LibraryFragment() {
         // Required empty public constructor
     }
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        myFragment = inflater.inflate(R.layout.fragment_podcasts, container, false);
+    public static LibraryFragment getInstance()    {
+        return new LibraryFragment();
+    }
 
-        viewPager = myFragment.findViewById(R.id.viewPagerTab2);
-        tabLayout = myFragment.findViewById(R.id.tabLayoutTab2);
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+
+        myFragment = inflater.inflate(R.layout.fragment_library, container, false);
+
+        viewPager = myFragment.findViewById(R.id.viewPagerFragmentHome);
+        tabLayout = myFragment.findViewById(R.id.tabLayoutFragmentHome);
 
         return myFragment;
     }
@@ -62,9 +69,8 @@ public class PodcastFragment extends Fragment {
     private void setUpViewPager(ViewPager viewPager) {
         SectionPagerAdapter adapter = new SectionPagerAdapter(getChildFragmentManager());
 
-        adapter.addFragment(new EpisodesFragment(), "Episodes");
-        adapter.addFragment(new DownLoadsFragment(), "Downloads");
-        adapter.addFragment(new ProgramsFragment(), "Programs");
+        adapter.addFragment(new MusicFragment(), "Music");
+        adapter.addFragment(new PodcastFragment(), "Podcasts");
 
         viewPager.setAdapter(adapter);
     }

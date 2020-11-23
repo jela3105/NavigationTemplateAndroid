@@ -1,4 +1,4 @@
-package com.example.spotifyclone.ui.home.TabsFragments;
+package com.example.spotifyclone.ui.library.TabsFragments;
 
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
