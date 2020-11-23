@@ -4,23 +4,41 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProviders;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.spotifyclone.ItemMusic;
 import com.example.spotifyclone.R;
+
+import java.util.ArrayList;
 
 public class HomeFragment extends Fragment {
 
-    private HomeViewModel homeViewModel;
+    private View fragmentHome;
+    private RecyclerView recyclerHome;
+    private ArrayList<ItemMusic> homeList;
 
+    public HomeFragment() {
+        // Required empty public constructor
+    }
+
+    @Override
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        View root = inflater.inflate(R.layout.fragment_home, container, false);
-        return root;
+        fragmentHome = inflater.inflate(R.layout.fragment_home, container, false);
+        recyclerHome = fragmentHome.findViewById(R.id.home_recycler);
+        return fragmentHome;
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        homeList = new ArrayList<>();
+        recyclerHome.setLayoutManager(new LinearLayoutManager(getContext()));
+        HomeAdapter homeAdapter = new HomeAdapter(homeList);
     }
 }
