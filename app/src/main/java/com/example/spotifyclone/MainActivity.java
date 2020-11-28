@@ -46,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
                         .showAuthView(true)
                         .build();
 
+        //here is the problem
         SpotifyAppRemote.connect(this, connectionParams,
                 new Connector.ConnectionListener() {
 
@@ -60,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
 
                     @Override
                     public void onFailure(Throwable throwable) {
-                        Log.e("MainActivity", throwable.getMessage(), throwable);
+                        Log.e("MainActivity F", throwable.getMessage(), throwable);
                         Toast.makeText(MainActivity.this, "valio kk banda", Toast.LENGTH_SHORT).show();
                         // Something went wrong when attempting to connect! Handle errors here
                     }
