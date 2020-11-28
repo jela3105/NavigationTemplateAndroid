@@ -52,11 +52,10 @@ public class PlayListsFragment extends Fragment {
     }
 
     private void fillArrayPlayList() {
-        arrayPlayList.add(new ItemMusic("https://images-na.ssl-images-amazon.com/images/I/71v1pBcehfL._AC_SX342_.jpg","Evolve","ImagineDragons"));
-
-        arrayPlayList.add(new ItemMusic("https://images-na.ssl-images-amazon.com/images/I/71v1pBcehfL._AC_SX342_.jpg","Evolve","ImagineDragons"));
-        arrayPlayList.add(new ItemMusic("https://images-na.ssl-images-amazon.com/images/I/71v1pBcehfL._AC_SX342_.jpg","Evolve","ImagineDragons"));
-        arrayPlayList.add(new ItemMusic("https://images-na.ssl-images-amazon.com/images/I/71v1pBcehfL._AC_SX342_.jpg","Evolve","ImagineDragons"));
-        arrayPlayList.add(new ItemMusic("https://images-na.ssl-images-amazon.com/images/I/71v1pBcehfL._AC_SX342_.jpg","Evolve","ImagineDragons"));
+        arrayPlayList.add(new ItemMusic("https://images-na.ssl-images-amazon.com/images/I/71v1pBcehfL._AC_SX342_.jpg","Evolve","Imagine Dragons"));
+        arrayPlayList.add(new ItemMusic("https://raw.githubusercontent.com/jela3105/CanContentoFrontend/main/images/index/estetica.jpg","Evolve","Imagine Dragons"));
+        arrayPlayList.add(new ItemMusic("https://images-na.ssl-images-amazon.com/images/I/71v1pBcehfL._AC_SX342_.jpg","Evolve","Imagine Dragons"));
+        arrayPlayList.add(new ItemMusic("https://images-na.ssl-images-amazon.com/images/I/71v1pBcehfL._AC_SX342_.jpg","Evolve","Imagine Dragons"));
+        arrayPlayList.add(new ItemMusic("https://images-na.ssl-images-amazon.com/images/I/71v1pBcehfL._AC_SX342_.jpg","Evolve","Imagine Dragons"));
     }
 }

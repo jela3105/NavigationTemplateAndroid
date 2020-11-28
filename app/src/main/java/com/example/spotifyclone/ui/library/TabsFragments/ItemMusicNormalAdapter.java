@@ -55,9 +55,9 @@ public class ItemMusicNormalAdapter extends RecyclerView.Adapter<ItemMusicNormal
             title = itemView.findViewById(R.id.item_music_normal_title);
             description = itemView.findViewById(R.id.item_music_normal_description);
             image = itemView.findViewById(R.id.item_music_normal_image);
-
         }
 
+        //events
         @Override
         public void onClick(View view) {
 

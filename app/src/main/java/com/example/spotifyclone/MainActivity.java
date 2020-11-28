@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
                         .build();
 
         //here is the problem
+        /*
         SpotifyAppRemote.connect(this, connectionParams,
                 new Connector.ConnectionListener() {
 
@@ -66,6 +67,8 @@ public class MainActivity extends AppCompatActivity {
                         // Something went wrong when attempting to connect! Handle errors here
                     }
                 });
+
+        */
     }
 
     private void connected() {
