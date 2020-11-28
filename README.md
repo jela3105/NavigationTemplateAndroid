@@ -1,2 +1,2 @@
-# NavigationTemplateAndroid
-Bottom Navigation in Android with Java, is only an experimental template to learn more about navigation in Android
+# SpotifyAndroidClone
+Is only an experimental app to learn more about development in Android using the SDK of Spotify
