@@ -53,9 +53,9 @@ public class PlayListsFragment extends Fragment {
 
     private void fillArrayPlayList() {
         arrayPlayList.add(new ItemMusic("https://images-na.ssl-images-amazon.com/images/I/71v1pBcehfL._AC_SX342_.jpg","Evolve","Imagine Dragons"));
-        arrayPlayList.add(new ItemMusic("https://raw.githubusercontent.com/jela3105/CanContentoFrontend/main/images/index/estetica.jpg","Evolve","Imagine Dragons"));
-        arrayPlayList.add(new ItemMusic("https://images-na.ssl-images-amazon.com/images/I/71v1pBcehfL._AC_SX342_.jpg","Evolve","Imagine Dragons"));
-        arrayPlayList.add(new ItemMusic("https://images-na.ssl-images-amazon.com/images/I/71v1pBcehfL._AC_SX342_.jpg","Evolve","Imagine Dragons"));
-        arrayPlayList.add(new ItemMusic("https://images-na.ssl-images-amazon.com/images/I/71v1pBcehfL._AC_SX342_.jpg","Evolve","Imagine Dragons"));
+        arrayPlayList.add(new ItemMusic("https://t2.genius.com/unsafe/220x220/https%3A%2F%2Fimages.genius.com%2Fbbea4553e61a94577e5d928cb49a5406.999x999x1.jpg","Under the moon","Foster the people"));
+        arrayPlayList.add(new ItemMusic("https://upload.wikimedia.org/wikipedia/en/thumb/f/f3/Trench_Twenty_One_Pilots.png/220px-Trench_Twenty_One_Pilots.png","Trench","Twenty one pilots"));
+        arrayPlayList.add(new ItemMusic("https://upload.wikimedia.org/wikipedia/en/0/01/OneRepublic_-_Human.png","Human","One Republic"));
+        arrayPlayList.add(new ItemMusic("https://www.elquintobeatle.com/wp-content/uploads/2019/10/coldplay-everyday-life-1-1068x1068.jpeg","Everyday life","Coldplay"));
     }
 }
