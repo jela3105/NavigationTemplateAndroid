@@ -10,6 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.spotifyclone.CircleTransform;
 import com.example.spotifyclone.ItemMusic;
 import com.example.spotifyclone.R;
 import com.squareup.picasso.Picasso;
@@ -33,7 +34,7 @@ public class ItemMusicNormalAdapter extends RecyclerView.Adapter<ItemMusicNormal
 
     @Override
     public void onBindViewHolder(@NonNull ItemMusicNormalViewHolder holder, int position) {
-        Picasso.with(holder.context).load(musicList.get(position).getImage()).into(holder.image);
+        Picasso.with(holder.context).load(musicList.get(position).getImage()).transform(new CircleTransform()).into(holder.image);
         holder.title.setText(musicList.get(position).getTitle());
         holder.description.setText(musicList.get(position).getDescription());
     }
