@@ -71,7 +71,9 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/genres_most_listen_recycler"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:spanCount="2"/>
     </LinearLayout>
 
     <LinearLayout
