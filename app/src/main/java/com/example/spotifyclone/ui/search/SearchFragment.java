@@ -35,6 +35,7 @@ public class SearchFragment extends Fragment {
         recyclerSearchGenres.setLayoutManager(new GridLayoutManager(getContext(),2));
         fillGenres();
         ItemSearchAdapter itemSearchAdapter = new ItemSearchAdapter(arrayGenres);
+        recyclerSearchGenres.setAdapter(itemSearchAdapter);
     }
 
     private void fillGenres() {
