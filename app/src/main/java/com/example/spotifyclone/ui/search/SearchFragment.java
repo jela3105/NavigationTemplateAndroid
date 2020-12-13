@@ -4,25 +4,39 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProviders;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.spotifyclone.ItemMusic;
+import com.example.spotifyclone.ItemSearch;
 import com.example.spotifyclone.R;
 
+import java.util.ArrayList;
+
 public class SearchFragment extends Fragment {
+    View fragmentSearch;
+    RecyclerView recyclerSearchGenres;
+    ArrayList<ItemSearch> arrayGenres;
 
-    private SearchViewModel searchViewModel;
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        fragmentSearch = inflater.inflate(R.layout.fragment_search, container, false);
+        recyclerSearchGenres = fragmentSearch.findViewById(R.id.genres_most_listen_recycler);
+        return fragmentSearch;
+    }
 
-    public View onCreateView(@NonNull LayoutInflater inflater,
-                             ViewGroup container, Bundle savedInstanceState) {
-        searchViewModel =
-                ViewModelProviders.of(this).get(SearchViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_search, container, false);
-        return root;
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        arrayGenres = new ArrayList<>();
+        recyclerSearchGenres.setLayoutManager(new GridLayoutManager(getContext(),2));
+        fillGenres();
+
+    }
+
+    private void fillGenres() {
     }
 }
