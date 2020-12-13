@@ -10,6 +10,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
+import com.example.spotifyclone.adapters.SectionPagerAdapter;
 import com.example.spotifyclone.ui.library.TabsFragments.*;
 
 import com.example.spotifyclone.R;

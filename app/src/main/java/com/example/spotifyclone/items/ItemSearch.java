@@ -1,4 +1,4 @@
-package com.example.spotifyclone;
+package com.example.spotifyclone.items;
 
 public class ItemSearch {
     private String image;

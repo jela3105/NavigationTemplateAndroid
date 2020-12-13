@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.spotifyclone.R;
+import com.example.spotifyclone.adapters.SectionPagerAdapter;
 import com.google.android.material.tabs.TabLayout;
 
 public class PodcastFragment extends Fragment {

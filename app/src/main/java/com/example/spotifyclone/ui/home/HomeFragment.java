@@ -11,7 +11,7 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.spotifyclone.ItemMusic;
+import com.example.spotifyclone.items.ItemMusic;
 import com.example.spotifyclone.R;
 
 import java.util.ArrayList;

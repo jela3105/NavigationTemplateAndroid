@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.spotifyclone.ItemMusic;
+import com.example.spotifyclone.items.ItemMusic;
 import com.example.spotifyclone.R;
 
 import java.util.ArrayList;

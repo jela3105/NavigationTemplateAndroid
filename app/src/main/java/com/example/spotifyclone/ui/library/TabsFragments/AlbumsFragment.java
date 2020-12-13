@@ -12,8 +12,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.spotifyclone.ItemMusic;
+import com.example.spotifyclone.items.ItemMusic;
 import com.example.spotifyclone.R;
+import com.example.spotifyclone.adapters.ItemMusicNormalAdapter;
 
 import java.util.ArrayList;
 
