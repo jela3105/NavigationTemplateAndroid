@@ -54,10 +54,10 @@ public class ArtistFragment extends Fragment {
     }
 
     private void fillArrayArtist() {
-        arrayArtist.add(new ItemMusic("https://images-na.ssl-images-amazon.com/images/I/71v1pBcehfL._AC_SX342_.jpg","Evolve","Imagine Dragons"));
-        arrayArtist.add(new ItemMusic("https://t2.genius.com/unsafe/220x220/https%3A%2F%2Fimages.genius.com%2Fbbea4553e61a94577e5d928cb49a5406.999x999x1.jpg","Under the moon","Foster the people"));
-        arrayArtist.add(new ItemMusic("https://upload.wikimedia.org/wikipedia/en/thumb/f/f3/Trench_Twenty_One_Pilots.png/220px-Trench_Twenty_One_Pilots.png","Trench","Twenty one pilots"));
-        arrayArtist.add(new ItemMusic("https://upload.wikimedia.org/wikipedia/en/0/01/OneRepublic_-_Human.png","Human","One Republic"));
-        arrayArtist.add(new ItemMusic("https://www.elquintobeatle.com/wp-content/uploads/2019/10/coldplay-everyday-life-1-1068x1068.jpeg","Everyday life",""));
+        arrayArtist.add(new ItemMusic("https://pbs.twimg.com/profile_images/1047708254447357957/fvJXTeOY_400x400.jpg","Imagine Dragons","71 songs"));
+        arrayArtist.add(new ItemMusic("https://pbs.twimg.com/profile_images/1326345760078585858/kp6quzrq_400x400.jpg","Foster the people","33 songs"));
+        arrayArtist.add(new ItemMusic("https://pbs.twimg.com/profile_images/1268035874127675392/7HDvPya9_400x400.jpg","Twenty one pilots","63 songs"));
+        arrayArtist.add(new ItemMusic("https://pbs.twimg.com/profile_images/1238313639192350720/yg3-GKKB_400x400.jpg","One Republic","74 songs"));
+        arrayArtist.add(new ItemMusic("https://pbs.twimg.com/profile_images/1278971521982226432/aOOcaTro_400x400.jpg","Coldplay","78 songs"));
     }
 }
