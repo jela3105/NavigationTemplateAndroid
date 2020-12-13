@@ -15,6 +15,10 @@ import java.util.ArrayList;
 public class ItemSearchAdapter extends RecyclerView.Adapter<ItemSearchAdapter.ItemSearchViewHolder> {
     ArrayList<ItemSearch> searchList;
 
+    public ItemSearchAdapter(ArrayList<ItemSearch> searchList) {
+        this.searchList = searchList;
+    }
+
     @NonNull
     @Override
     public ItemSearchViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {

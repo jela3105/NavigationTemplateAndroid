@@ -11,6 +11,7 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.spotifyclone.adapters.ItemSearchAdapter;
 import com.example.spotifyclone.items.ItemSearch;
 import com.example.spotifyclone.R;
 
@@ -33,9 +34,11 @@ public class SearchFragment extends Fragment {
         arrayGenres = new ArrayList<>();
         recyclerSearchGenres.setLayoutManager(new GridLayoutManager(getContext(),2));
         fillGenres();
-
+        ItemSearchAdapter itemSearchAdapter = new ItemSearchAdapter(arrayGenres);
     }
 
     private void fillGenres() {
+        arrayGenres.add(new ItemSearch("fff","fff"));
+        arrayGenres.add(new ItemSearch("fff","fff"));
     }
 }
