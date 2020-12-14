@@ -20,11 +20,18 @@ import java.util.ArrayList;
 public class SearchFragment extends Fragment {
     View fragmentSearch;
     RecyclerView recyclerSearchGenres;
+    RecyclerView recyclerSearchPodcasts;
+    RecyclerView recyclerSearchAll;
+
     ArrayList<ItemSearch> arrayGenres;
+    ArrayList<ItemSearch> arrayPodcast;
+    ArrayList<ItemSearch> arrayAll;
 
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         fragmentSearch = inflater.inflate(R.layout.fragment_search, container, false);
         recyclerSearchGenres = fragmentSearch.findViewById(R.id.genres_most_listen_recycler);
+        recyclerSearchPodcasts = fragmentSearch.findViewById(R.id.podcast_most_popular_recycler);
+        recyclerSearchAll = fragmentSearch.findViewById(R.id.explore_all_recycler);
         return fragmentSearch;
     }
 
@@ -32,14 +39,42 @@ public class SearchFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         arrayGenres = new ArrayList<>();
+        arrayPodcast = new ArrayList<>();
+        arrayAll = new ArrayList<>();
         recyclerSearchGenres.setLayoutManager(new GridLayoutManager(getContext(),2));
+        recyclerSearchPodcasts.setLayoutManager(new GridLayoutManager(getContext(),2));
+        recyclerSearchAll.setLayoutManager(new GridLayoutManager(getContext(),2));
         fillGenres();
-        ItemSearchAdapter itemSearchAdapter = new ItemSearchAdapter(arrayGenres);
-        recyclerSearchGenres.setAdapter(itemSearchAdapter);
+        fillPodcasts();
+        fillAll();
+        ItemSearchAdapter itemGenresAdapter = new ItemSearchAdapter(arrayGenres);
+        recyclerSearchGenres.setAdapter(itemGenresAdapter);
+
+        ItemSearchAdapter itemPodcastAdapter = new ItemSearchAdapter(arrayPodcast);
+        recyclerSearchPodcasts.setAdapter(itemPodcastAdapter);
+
+        ItemSearchAdapter itemAllAdapter = new ItemSearchAdapter(arrayAll);
+        recyclerSearchAll.setAdapter(itemAllAdapter);
     }
 
     private void fillGenres() {
         arrayGenres.add(new ItemSearch("fff","fff"));
         arrayGenres.add(new ItemSearch("fff","fff"));
+    }
+    private void fillPodcasts(){
+        arrayPodcast.add(new ItemSearch("fff","fff"));
+        arrayPodcast.add(new ItemSearch("fff","fff"));
+
+    }
+    private void fillAll(){
+        arrayAll.add(new ItemSearch("fff","fff"));
+        arrayAll.add(new ItemSearch("fff","fff"));
+        arrayAll.add(new ItemSearch("fff","fff"));
+        arrayAll.add(new ItemSearch("fff","fff"));
+        arrayAll.add(new ItemSearch("fff","fff"));
+        arrayAll.add(new ItemSearch("fff","fff"));
+        arrayAll.add(new ItemSearch("fff","fff"));
+        arrayAll.add(new ItemSearch("fff","fff"));
+
     }
 }
