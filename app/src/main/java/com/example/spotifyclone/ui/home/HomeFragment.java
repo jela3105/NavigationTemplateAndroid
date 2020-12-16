@@ -19,8 +19,6 @@ import java.util.ArrayList;
 public class HomeFragment extends Fragment {
 
     private View fragmentHome;
-    private RecyclerView recyclerHome;
-    private ArrayList<ItemMusic> homeList;
 
     public HomeFragment() {
         // Required empty public constructor
@@ -30,15 +28,11 @@ public class HomeFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         fragmentHome = inflater.inflate(R.layout.fragment_home, container, false);
-        recyclerHome = fragmentHome.findViewById(R.id.home_recycler);
         return fragmentHome;
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        homeList = new ArrayList<>();
-        recyclerHome.setLayoutManager(new LinearLayoutManager(getContext()));
-        HomeAdapter homeAdapter = new HomeAdapter(homeList);
     }
 }
