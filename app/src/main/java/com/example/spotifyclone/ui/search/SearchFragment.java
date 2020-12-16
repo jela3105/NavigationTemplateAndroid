@@ -55,6 +55,7 @@ public class SearchFragment extends Fragment {
 
         ItemSearchAdapter itemAllAdapter = new ItemSearchAdapter(arrayAll);
         recyclerSearchAll.setAdapter(itemAllAdapter);
+        recyclerSearchAll.setLayoutFrozen(true);
     }
 
     private void fillGenres() {
@@ -67,6 +68,14 @@ public class SearchFragment extends Fragment {
 
     }
     private void fillAll(){
+        arrayAll.add(new ItemSearch("fff","fff"));
+        arrayAll.add(new ItemSearch("fff","fff"));
+        arrayAll.add(new ItemSearch("fff","fff"));
+        arrayAll.add(new ItemSearch("fff","fff"));
+        arrayAll.add(new ItemSearch("fff","fff"));
+        arrayAll.add(new ItemSearch("fff","fff"));
+        arrayAll.add(new ItemSearch("fff","fff"));
+        arrayAll.add(new ItemSearch("fff","fff"));
         arrayAll.add(new ItemSearch("fff","fff"));
         arrayAll.add(new ItemSearch("fff","fff"));
         arrayAll.add(new ItemSearch("fff","fff"));
