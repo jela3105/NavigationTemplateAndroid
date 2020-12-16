@@ -18,7 +18,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="30dp"
                 android:layout_marginEnd="8dp"
                 android:orientation="vertical"
                 app:layout_constraintStart_toStartOf="parent"
@@ -30,7 +30,8 @@
                     android:layout_marginStart="8dp"
                     android:text="Good night"
                     android:textColor="@color/white"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/welcome_recycler"
@@ -44,7 +45,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="30dp"
                 android:layout_marginEnd="8dp"
                 android:orientation="vertical"
                 app:layout_constraintStart_toStartOf="parent"
@@ -56,7 +57,8 @@
                     android:text="Heard recently"
                     android:layout_marginStart="8dp"
                     android:textColor="@color/white"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold"
+                    android:textSize="20sp" />
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/heard_recently_recycler"
@@ -70,7 +72,7 @@
                 android:id="@+id/podcast_personalized_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="30dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"
                 android:orientation="vertical"
@@ -83,7 +85,8 @@
                     android:layout_marginStart="8dp"
                     android:text="Personalized podcast"
                     android:textColor="@color/white"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/podcast_personalized_recycler"
