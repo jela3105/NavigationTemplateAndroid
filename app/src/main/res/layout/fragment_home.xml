@@ -28,7 +28,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
-                    android:text="The genres you listen the most"
+                    android:text="Good night"
                     android:textColor="@color/white"
                     android:textStyle="bold"/>
 
@@ -53,7 +53,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="The most popular podcast"
+                    android:text="Heard recently"
                     android:layout_marginStart="8dp"
                     android:textColor="@color/white"
                     android:textStyle="bold"/>
@@ -81,7 +81,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
-                    android:text="Explore all"
+                    android:text="Personalized podcast"
                     android:textColor="@color/white"
                     android:textStyle="bold"/>
 
