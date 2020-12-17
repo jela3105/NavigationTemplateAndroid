@@ -18,7 +18,10 @@ import java.util.ArrayList;
 
 public class HomeFragment extends Fragment {
 
-    private View fragmentHome;
+    View fragmentHome;
+    RecyclerView recyclerWelcome;
+    RecyclerView recyclerHeardRecently;
+    RecyclerView recyclerPersonalizedPodcast;
 
     public HomeFragment() {
         // Required empty public constructor
@@ -28,6 +31,9 @@ public class HomeFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         fragmentHome = inflater.inflate(R.layout.fragment_home, container, false);
+        recyclerWelcome = fragmentHome.findViewById(R.id.welcome_recycler);
+        recyclerHeardRecently = fragmentHome.findViewById(R.id.heard_recently_recycler);
+        recyclerPersonalizedPodcast = fragmentHome.findViewById(R.id.podcast_personalized_recycler);
         return fragmentHome;
     }
 
