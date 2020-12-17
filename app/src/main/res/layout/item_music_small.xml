@@ -16,7 +16,7 @@
         android:layout_marginStart="15dp"
         >
         <ImageView
-            android:id="@+id/item_music_normal_image"
+            android:id="@+id/item_music_small_image"
             android:layout_width="65dp"
             android:layout_height="65dp"
             android:src="@drawable/evolve"
@@ -27,7 +27,7 @@
             android:orientation="vertical"
             android:layout_marginStart="15dp">
             <TextView
-                android:id="@+id/item_music_normal_title"
+                android:id="@+id/item_music_small_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
@@ -37,7 +37,7 @@
                 android:textSize="16sp"
                 android:text="Evolve"/>
             <TextView
-                android:id="@+id/item_music_normal_description"
+                android:id="@+id/item_music_small_description"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="left"

@@ -58,9 +58,9 @@ public class ItemMusicRoundAdapter extends RecyclerView.Adapter<ItemMusicRoundAd
         public ItemMusicRoundViewHolder(@NonNull View itemView) {
             super(itemView);
             context = itemView.getContext();
-            title = itemView.findViewById(R.id.item_music_normal_title);
-            description = itemView.findViewById(R.id.item_music_normal_description);
-            image = itemView.findViewById(R.id.item_music_normal_image);
+            title = itemView.findViewById(R.id.item_music_small_title);
+            description = itemView.findViewById(R.id.item_music_small_description);
+            image = itemView.findViewById(R.id.item_music_small_image);
         }
 
         //events
