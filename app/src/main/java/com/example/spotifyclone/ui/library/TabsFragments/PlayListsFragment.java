@@ -14,7 +14,7 @@ import android.view.ViewGroup;
 
 import com.example.spotifyclone.items.ItemMusic;
 import com.example.spotifyclone.R;
-import com.example.spotifyclone.adapters.ItemMusicNormalAdapter;
+import com.example.spotifyclone.adapters.ItemMusicSmallAdapter;
 
 import java.util.ArrayList;
 
@@ -48,8 +48,8 @@ public class PlayListsFragment extends Fragment {
         arrayPlayList = new ArrayList<>();
         recyclerPlayList.setLayoutManager(new LinearLayoutManager(getContext()));
         fillArrayPlayList();
-        ItemMusicNormalAdapter itemMusicNormalAdapter = new ItemMusicNormalAdapter(arrayPlayList);
-        recyclerPlayList.setAdapter(itemMusicNormalAdapter);
+        ItemMusicSmallAdapter itemMusicSmallAdapter = new ItemMusicSmallAdapter(arrayPlayList);
+        recyclerPlayList.setAdapter(itemMusicSmallAdapter);
     }
 
     private void fillArrayPlayList() {

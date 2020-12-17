@@ -16,23 +16,23 @@ import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
-public class ItemMusicNormalAdapter extends RecyclerView.Adapter<ItemMusicNormalAdapter.ItemMusicNormalViewHolder> {
+public class ItemMusicSmallAdapter extends RecyclerView.Adapter<ItemMusicSmallAdapter.ItemMusicSmallViewHolder> {
 
     ArrayList<ItemMusic> musicList;
 
-    public ItemMusicNormalAdapter(ArrayList<ItemMusic> musicList) {
+    public ItemMusicSmallAdapter(ArrayList<ItemMusic> musicList) {
         this.musicList = musicList;
     }
 
     @NonNull
     @Override
-    public ItemMusicNormalViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public ItemMusicSmallViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_music_small, null, false);
-        return new ItemMusicNormalViewHolder(view);
+        return new ItemMusicSmallViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ItemMusicNormalViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull ItemMusicSmallViewHolder holder, int position) {
         Picasso.with(holder.context).load(musicList.get(position).getImage()).into(holder.image);
         //in circle .transform(new CircleTransform())
         holder.title.setText(musicList.get(position).getTitle());
@@ -44,13 +44,13 @@ public class ItemMusicNormalAdapter extends RecyclerView.Adapter<ItemMusicNormal
     public int getItemCount() {return musicList.size();
     }
 
-    public class ItemMusicNormalViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+    public class ItemMusicSmallViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
         Context context;
         TextView title;
         TextView description;
         ImageView image;
-        public ItemMusicNormalViewHolder(@NonNull View itemView) {
+        public ItemMusicSmallViewHolder(@NonNull View itemView) {
             super(itemView);
             context = itemView.getContext();
             title = itemView.findViewById(R.id.item_music_normal_title);
