@@ -11,6 +11,7 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.spotifyclone.adapters.ItemMusicNormalAdapter;
 import com.example.spotifyclone.adapters.ItemMusicSmallAdapter;
 import com.example.spotifyclone.items.ItemMusic;
 import com.example.spotifyclone.R;
@@ -46,7 +47,7 @@ public class HomeFragment extends Fragment {
         arrayHeardRecently = new ArrayList<>();
         recyclerHeardRecently.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
         fillHeardRecently();
-        ItemMusicSmallAdapter itemHeardRecentlyAdapter = new ItemMusicSmallAdapter(arrayHeardRecently);
+        ItemMusicNormalAdapter itemHeardRecentlyAdapter = new ItemMusicNormalAdapter(arrayHeardRecently);
         recyclerHeardRecently.setAdapter(itemHeardRecentlyAdapter);
     }
 
