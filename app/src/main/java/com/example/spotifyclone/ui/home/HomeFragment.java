@@ -23,6 +23,8 @@ public class HomeFragment extends Fragment {
     RecyclerView recyclerHeardRecently;
     RecyclerView recyclerPersonalizedPodcast;
 
+
+
     public HomeFragment() {
         // Required empty public constructor
     }

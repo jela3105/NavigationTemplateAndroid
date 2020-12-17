@@ -27,7 +27,7 @@ public class ItemMusicNormalAdapter extends RecyclerView.Adapter<ItemMusicNormal
     @NonNull
     @Override
     public ItemMusicNormalViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_music_normal, null, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_music_small, null, false);
         return new ItemMusicNormalViewHolder(view);
     }
 
