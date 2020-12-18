@@ -11,17 +11,19 @@
         android:orientation="horizontal"
         android:background="@color/gray_strong">
         <ImageView
+            android:id="@+id/item_welcome_image"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:src="@drawable/rock"/>
         <TextView
+            android:id="@+id/item_welcome_title"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:paddingStart="5dp"
             android:textColor="@color/white"
             android:textStyle="bold"
             android:text="Rock party"
-            android:gravity="left||center"/>
+            android:gravity="center_vertical"/>
 
     </LinearLayout>
 </androidx.cardview.widget.CardView>
