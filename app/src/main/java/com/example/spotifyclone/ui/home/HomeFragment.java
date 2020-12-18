@@ -8,11 +8,13 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.spotifyclone.adapters.ItemMusicNormalAdapter;
 import com.example.spotifyclone.adapters.ItemMusicSmallAdapter;
+import com.example.spotifyclone.adapters.ItemWelcomeAdapter;
 import com.example.spotifyclone.items.ItemMusic;
 import com.example.spotifyclone.R;
 
@@ -26,7 +28,7 @@ public class HomeFragment extends Fragment {
     RecyclerView recyclerPersonalizedPodcast;
 
     ArrayList<ItemMusic> arrayHeardRecently;
-
+    ArrayList<ItemMusic> arrayWelcome;
     public HomeFragment() {
         // Required empty public constructor
     }
@@ -46,9 +48,23 @@ public class HomeFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         arrayHeardRecently = new ArrayList<>();
         recyclerHeardRecently.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
+        arrayWelcome = new ArrayList<>();
+        recyclerWelcome.setLayoutManager(new GridLayoutManager(getContext(), 2));
         fillHeardRecently();
+        fillWelcome();
         ItemMusicNormalAdapter itemHeardRecentlyAdapter = new ItemMusicNormalAdapter(arrayHeardRecently);
         recyclerHeardRecently.setAdapter(itemHeardRecentlyAdapter);
+        ItemWelcomeAdapter itemWelcomeAdapter = new ItemWelcomeAdapter(arrayWelcome);
+        recyclerWelcome.setAdapter(itemWelcomeAdapter);
+    }
+
+    private void fillWelcome() {
+        arrayWelcome.add(new ItemMusic("https://pbs.twimg.com/profile_images/1047708254447357957/fvJXTeOY_400x400.jpg","Imagine Dragons","71 songs"));
+        arrayWelcome.add(new ItemMusic("https://pbs.twimg.com/profile_images/1047708254447357957/fvJXTeOY_400x400.jpg","Imagine Dragons","71 songs"));
+        arrayWelcome.add(new ItemMusic("https://pbs.twimg.com/profile_images/1047708254447357957/fvJXTeOY_400x400.jpg","Imagine Dragons","71 songs"));
+        arrayWelcome.add(new ItemMusic("https://pbs.twimg.com/profile_images/1047708254447357957/fvJXTeOY_400x400.jpg","Imagine Dragons","71 songs"));
+        arrayWelcome.add(new ItemMusic("https://pbs.twimg.com/profile_images/1047708254447357957/fvJXTeOY_400x400.jpg","Imagine Dragons","71 songs"));
+        arrayWelcome.add(new ItemMusic("https://pbs.twimg.com/profile_images/1047708254447357957/fvJXTeOY_400x400.jpg","Imagine Dragons","71 songs"));
     }
 
     private void fillHeardRecently() {

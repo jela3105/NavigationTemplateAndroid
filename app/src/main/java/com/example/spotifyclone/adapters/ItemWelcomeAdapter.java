@@ -20,6 +20,10 @@ public class ItemWelcomeAdapter extends RecyclerView.Adapter<ItemWelcomeAdapter.
 
     ArrayList<ItemMusic> musicList;
 
+    public ItemWelcomeAdapter(ArrayList<ItemMusic> musicList) {
+        this.musicList = musicList;
+    }
+
     @NonNull
     @Override
     public ItemWelcomeAdapter.ItemWelcomeViewHoler onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
