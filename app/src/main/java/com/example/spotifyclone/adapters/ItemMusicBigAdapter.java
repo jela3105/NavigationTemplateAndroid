@@ -18,6 +18,11 @@ import java.util.ArrayList;
 
 public class ItemMusicBigAdapter extends RecyclerView.Adapter<ItemMusicBigAdapter.ItemMusicBigViewHolder>{
     ArrayList<ItemMusic> musicList;
+
+    public ItemMusicBigAdapter(ArrayList<ItemMusic> musicList) {
+        this.musicList = musicList;
+    }
+
     @NonNull
     @Override
     public ItemMusicBigViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
