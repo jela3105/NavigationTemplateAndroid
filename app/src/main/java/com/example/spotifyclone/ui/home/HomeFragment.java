@@ -32,6 +32,7 @@ public class HomeFragment extends Fragment {
     ArrayList<ItemMusic> arrayHeardRecently;
     ArrayList<ItemMusic> arrayWelcome;
     ArrayList<ItemMusic> arrayNewReleases;
+    ArrayList<ItemMusic> arrayPersonalizedPodcast;
     public HomeFragment() {
         // Required empty public constructor
     }
@@ -56,10 +57,13 @@ public class HomeFragment extends Fragment {
         recyclerWelcome.setLayoutManager(new GridLayoutManager(getContext(), 2));
         arrayNewReleases = new ArrayList<>();
         recyclerNewReleases.setLayoutManager(new LinearLayoutManager(getContext(),LinearLayoutManager.HORIZONTAL,false));
+        arrayPersonalizedPodcast = new ArrayList<>();
+        recyclerPersonalizedPodcast.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
 
         fillHeardRecently();
         fillWelcome();
         fillNewReleases();
+        fillPersonalizedPodcast();
 
         ItemMusicNormalAdapter itemHeardRecentlyAdapter = new ItemMusicNormalAdapter(arrayHeardRecently);
         recyclerHeardRecently.setAdapter(itemHeardRecentlyAdapter);
@@ -67,7 +71,11 @@ public class HomeFragment extends Fragment {
         recyclerWelcome.setAdapter(itemWelcomeAdapter);
         ItemMusicBigAdapter itemMusicBigAdapter = new ItemMusicBigAdapter(arrayNewReleases);
         recyclerNewReleases.setAdapter(itemMusicBigAdapter);
+        ItemMusicBigAdapter itemPersonalizedPodcastAdapter = new ItemMusicBigAdapter(arrayPersonalizedPodcast);
+        recyclerPersonalizedPodcast.setAdapter(itemPersonalizedPodcastAdapter);
+    }
 
+    private void fillPersonalizedPodcast() {
     }
 
     private void fillNewReleases() {
